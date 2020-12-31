@@ -39,6 +39,9 @@ public class RSSFeedItem {
     /// Example: Venice Film Festival Tries to Quit Sinking
     public var title: String?
     
+    /// Cover image url
+    public var cover: String?
+    
     /// The URL of the item.
     /// 
     /// Example: http://nytimes.com/2004/12/07FEST.html

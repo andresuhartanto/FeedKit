@@ -66,6 +66,7 @@ extension RSSFeed {
             if let day = RSSFeedSkipDay(rawValue: string) {
                 self.skipDays?.append(day)
             }
+        case .rssChannelItemCover:                                  self.items?.last?.cover                                         = self.items?.last?.cover?.appending(string) ?? string
         case .rssChannelItemTitle:                                  self.items?.last?.title                                         = self.items?.last?.title?.appending(string) ?? string
         case .rssChannelItemLink:                                   self.items?.last?.link                                          = self.items?.last?.link?.appending(string) ?? string
         case .rssChannelItemDescription:                            self.items?.last?.description                                   = self.items?.last?.description?.appending(string) ?? string
